@@ -22,8 +22,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 
-import com.invictrix.support.colorpicker.ColorPickerPreference;
-import com.invictrix.support.preferences.CustomSeekBarPreference;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.extra.settings.preferences.CustomSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.utils.ActionConstants;
@@ -324,7 +324,7 @@ public class FlingSettings extends ActionFragment implements
             case DIALOG_RESET_CONFIRM:
             case DIALOG_RESTORE_PROFILE:
             case DIALOG_SAVE_PROFILE:
-                return MetricsProto.MetricsEvent.INVICTRIX;
+                return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
             default:
                 return super.getDialogMetricsCategory(dialogId);
         }
@@ -713,6 +713,6 @@ public class FlingSettings extends ActionFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.INVICTRIX;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 }
