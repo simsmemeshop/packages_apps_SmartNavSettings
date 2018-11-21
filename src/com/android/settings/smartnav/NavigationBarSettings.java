@@ -128,8 +128,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
                 mSmartbarSettings.setSelectable(false);
                 mFlingSettings.setEnabled(false);
                 mFlingSettings.setSelectable(false);
-                mPulseSettings.setEnabled(false);
-                mPulseSettings.setSelectable(false);
+                mPulseSettings.setEnabled(true);
+                mPulseSettings.setSelectable(true);
                 break;
             case 1:
                 mDefaultSettings.setEnabled(false);
